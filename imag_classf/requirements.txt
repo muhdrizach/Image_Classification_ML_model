@@ -1,0 +1,8 @@
+Flask
+numpy
+pandas
+matplotlib
+scikit-image
+scikit-learn
+requests
+ipython
