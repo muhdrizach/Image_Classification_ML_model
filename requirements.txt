@@ -6,3 +6,4 @@ scikit-image
 scikit-learn
 requests
 ipython
+gunicorn
