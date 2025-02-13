@@ -8,7 +8,10 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Load the trained model
-model = pickle.load(open('img_model.p', 'rb'))  # Ensure this is the correct path to your model
+#model = pickle.load(open('img_model.p', 'rb'))  # Ensure this is the correct path to your model
+with open("img_model.p", "rb") as f:
+    model = pickle.load(f)
+
 
 # Categories (replace with actual categories from your model)
 Categories = ['Aeroplanes','Cars']
