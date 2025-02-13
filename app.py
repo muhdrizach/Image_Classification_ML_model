@@ -9,8 +9,10 @@ app = Flask(__name__)
 
 # Load the trained model
 #model = pickle.load(open('img_model.p', 'rb'))  # Ensure this is the correct path to your model
-with open("img_model.p", "rb") as f:
-    model = pickle.load(f)
+# with open("img_model.p", "rb") as f:
+#     model = pickle.load(f)
+
+model = joblib.load('img_model.joblib')
 
 
 # Categories (replace with actual categories from your model)
