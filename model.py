@@ -58,5 +58,7 @@ y_pred=model.predict(x_test)
 print(f"The model is {accuracy_score(y_pred,y_test)*100}% accurate")
 #confusion_matrix(y_pred,y_test)
 
-pickle.dump(model,open('img_model.p','wb'))
-print("Pickle is dumped successfully")
+# pickle.dump(model,open('img_model.p','wb'))
+# print("Pickle is dumped successfully")
+with open("model.pkl", "wb") as f:
+    pickle.dump(model, f)
