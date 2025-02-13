@@ -60,5 +60,8 @@ print(f"The model is {accuracy_score(y_pred,y_test)*100}% accurate")
 
 # pickle.dump(model,open('img_model.p','wb'))
 # print("Pickle is dumped successfully")
-with open("img_model.p", "wb") as f:
-    pickle.dump(model, f)
+# with open("img_model.p", "wb") as f:
+#     pickle.dump(model, f)
+
+joblib.dump(model, 'img_model.joblib')
+print("Model is dumped successfully")
