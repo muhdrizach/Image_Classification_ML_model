@@ -5,7 +5,6 @@ scikit-learn==0.24.2
 scikit-image
 requests
 cloudpickle
-numpy
 scipy
 pandas
 matplotlib
