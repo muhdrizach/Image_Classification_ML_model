@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: image-classification
+    env: python
+    buildCommand: |
+      apt-get update -y
+      apt-get install -y build-essential python3-dev
+      pip install --upgrade cython
+      pip install -r requirements.txt
+    startCommand: python app.py
