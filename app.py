@@ -1,3 +1,4 @@
+import joblib
 import pickle
 import requests
 from io import BytesIO
