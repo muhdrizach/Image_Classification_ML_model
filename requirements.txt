@@ -1,5 +1,5 @@
 Flask
-numpy
+numpy>=1.22
 pandas
 matplotlib
 scikit-image
