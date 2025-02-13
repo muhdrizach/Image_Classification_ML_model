@@ -1,5 +1,6 @@
 # Importing the libraries
 import joblib
+import cloudpickle as pickle
 import pandas as pd
 from sklearn import svm
 from sklearn.model_selection import GridSearchCV
@@ -64,5 +65,8 @@ print(f"The model is {accuracy_score(y_pred,y_test)*100}% accurate")
 # with open("img_model.p", "wb") as f:
 #     pickle.dump(model, f)
 
-joblib.dump(model, 'img_model.joblib')
-print("Model is dumped successfully")
+# joblib.dump(model, 'img_model.joblib')
+# print("Model is dumped successfully")
+
+with open('model_new.pkl', 'wb') as f:
+    pickle.dump(model, f)
