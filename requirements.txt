@@ -3,7 +3,7 @@ numpy
 pandas
 matplotlib
 scikit-image
-scikit-learn==0.24.2
+scikit-learn==0.24.2 --no-cache-dir
 requests
 ipython
 gunicorn
