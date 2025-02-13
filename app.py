@@ -13,7 +13,9 @@ app = Flask(__name__)
 # with open("img_model.p", "rb") as f:
 #     model = pickle.load(f)
 
-model = joblib.load('img_model.joblib')
+# model = joblib.load('img_model.joblib')
+with open('model_new.pkl', 'rb') as f:
+    model = pickle.load(f)
 
 
 # Categories (replace with actual categories from your model)
