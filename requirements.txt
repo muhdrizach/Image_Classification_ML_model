@@ -1,8 +1,8 @@
-Flask==2.0.1
-joblib==1.0.1
-scikit-learn==0.24.2
-scikit-image==0.18.3
-requests==2.25.1
+Flask
+joblib
+scikit-learn
+scikit-image
+requests
 
 numpy
 scipy
