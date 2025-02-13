@@ -3,7 +3,7 @@ joblib==1.1.1
 scikit-learn
 scikit-image==0.24.2
 requests
-
+cloudpickle
 numpy
 scipy
 pandas
