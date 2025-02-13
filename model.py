@@ -20,7 +20,7 @@ flat_data_arr=[]
 target_arr=[]
 #please use datadir='/content' if the files are upload on to google collab
 #else mount the drive and give path of the parent-folder containing all category images folders.
-datadir=r'C:\Users\Muhammed Riza\OneDrive\Documents\MSC AI,ML AND DS\sem3\ibm sem2 project\categories'
+datadir=r'/workspaces/Image_Classification_ML_model/categories'
 for i in Categories:
   print(f'loading... category : {i}')
   path=os.path.join(datadir,i)
